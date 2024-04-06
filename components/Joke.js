@@ -3,9 +3,10 @@ import { PropTypes } from 'prop-types';
 export default function Joke({ joke, btnText }) {
   return (
     <>
+      <h3>{joke.setup}</h3>
       {btnText === 'Get punchline!'
-        ? <h3>{joke.setup}</h3>
-        : <h3>{joke.delivery}</h3>}
+        ? ''
+        : <h4>{joke.delivery}</h4>}
     </>
   );
 }
